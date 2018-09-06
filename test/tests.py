@@ -47,5 +47,25 @@ class MyApiTests(unittest.TestCase):
             headers={'content-type': 'application/json'}
         )
         self.assertEqual(test_resp.status_code, 201)
+
+    def test_api_can_update_an_order(self):
+        """Test API can update a specified order item (PUT request)."""
+
+        test_resp = self.APP.put(
+            '/api/v1/orders/1',
+            data=json.dumps(self.sample_order),
+            headers={'content-type': 'application/json'}
+        )
+        self.assertEqual(test_resp.status_code, 200)
+
+    def test_order_item_deletion(self):
+        """Test API can delete an existing orderitem. (DELETE request)."""
+        res = self.APP.delete(
+            '/api/v1/orders/2',
+            headers={'content-type': 'application/json'}
+        )
+        self.assertEqual(res.status_code, 200)
+
+
 if __name__ == '__main__':
     unittest.main()
