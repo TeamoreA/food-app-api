@@ -1,19 +1,9 @@
-#Language used
 language: python
-
-#python version used
 python:
-  - "3.6.4"
-
-#packages to be installed
+  - "3.6"
+# command to install dependencies
 install:
   - pip install -r requirements.txt
-
-#run tests with
-script:
-  - cd tests
-  - nosetests  --with-coverage --cover-package=resources
-
-# command to run test coverage
-after_success:
-  - coveralls
+  - pip install .
+# command to run tests
+script: nosetests
