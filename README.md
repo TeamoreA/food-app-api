@@ -3,7 +3,7 @@
  ###### This is an API having endpoints to get a list of all order items, get a singe order item by specifying its id, update an order item and finally can delete the order item .
 
 
-[![Build Status](https://travis-ci.com/TeamoreA/food-app-api.svg?branch=develop)](https://travis-ci.com/TeamoreA/food-app-api)
+[![Build Status](https://travis-ci.com/TeamoreA/app-api.svg?branch=develop)](https://travis-ci.com/TeamoreA/app-api)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 
